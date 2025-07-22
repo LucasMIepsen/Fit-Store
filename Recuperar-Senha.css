@@ -1,0 +1,110 @@
+/* Reset e estrutura base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to top left, #ff6600, #f9f9f9 40%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container central */
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 360px;
+}
+
+/* Título */
+h2 {
+  text-align: left;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #ff6600;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Campos do formulário */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+/* Botão */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0077b6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f8a;
+}
+
+/* Link de login */
+.login-link {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.login-link a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVIDADE PARA MOBILE */
+@media (max-width: 480px) {
+  .form-box {
+    padding: 1.5rem;
+  }
+
+  .form-box h2 {
+    font-size: 1.3rem;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}

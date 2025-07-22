@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.PaginaPagamento {
+  background: linear-gradient(to top left, #ff6600, #f9f9f9 40%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagamento-box {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.pagamento-box h1 {
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #ff6600;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.pagamento-box p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.pagamento-box input[type="text"],
+.pagamento-box input[type="email"],
+.pagamento-box input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pagamento-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pagamento-box button:hover {
+  background-color: #005f8a;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+  .pagamento-box {
+    padding: 1.5rem;
+  }
+
+  .pagamento-box h1 {
+    font-size: 1.3rem;
+  }
+
+  .pagamento-box input {
+    font-size: 0.95rem;
+  }
+
+  .pagamento-box button {
+    font-size: 0.95rem;
+  }
+}

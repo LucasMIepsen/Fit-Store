@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento - FitStore</title>
+  <link rel="stylesheet" href="pagamento.css">
+
+<script>
+  function voltarParaInicio() {
+    window.location.href = "WebSite.html";
+  }
+</script>
+
+</head>
+<body>
+  <div class="PaginaPagamento">
+    <div class="pagamento-box">
+      <h1>Pagamento</h1>
+      <p>Finalize sua compra preenchendo os dados abaixo:</p>
+      <form onsubmit="event.preventDefault(); alert('Pagamento realizado com sucesso!');">
+        <input type="text" placeholder="Nome completo" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="text" placeholder="Endereço de entrega" required>
+        <input type="number" placeholder="Número do cartão" required>
+        <button type="submit">Finalizar Pagamento</button>
+      </form>
+      <button type="button" onclick="voltarParaInicio()" style="margin-top: 1rem; background-color: #ff6600;">Voltar para a Página Inicial</button>
+    </div>
+  </div>
+</body>
+</html>

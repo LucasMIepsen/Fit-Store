@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recuperar Senha - FitStore</title>
+
+<link rel="stylesheet" href="Recuperar-Senha.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2>Recupere sua senha</h2>
+      <form onsubmit="return recuperarSenha(event)">
+        <label for="email">Digite seu e‑mail cadastrado*</label>
+        <input type="email" id="email" required />
+
+        <label for="novaSenha">Sua nova senha*</label>
+        <input type="password" id="novaSenha" required />
+
+        <label for="confirmarSenha">Repita sua nova senha*</label>
+        <input type="password" id="confirmarSenha" required />
+
+        <button type="submit">ENVIAR</button>
+
+        <p class="login-link">Lembrou sua senha? <a href="login.html">Fazer login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="Recuperar-Senha.js"></script>
+</body>
+</html>

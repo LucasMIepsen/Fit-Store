@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitStore</title>
+
+<link rel="stylesheet" href="WebSite.css">
+
+<script src="WebSite.js"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="container nav">
+      <div class="logo">FitStore</div>
+      <div class="search-bar">
+            <form id="form-pesquisa" onsubmit="return pesquisarProduto()" style="display: flex;">
+  <input type="text" id="campo-pesquisa" placeholder="Buscar produtos..." required>
+  <button type="submit">🔍</button>
+</form>
+        </div>
+      <ul class="menu">
+        <li><a href="#suplementos">Suplementos</a></li>
+        <li><a href="#equipamentos">Equipamentos</a></li>
+        <li><a href="#roupas">Roupas</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#politica">Politicas e Privacidade</a></li>
+        </ul>
+<li class="icone-carrinho">
+  <a href="carrinho.html" title="Ver carrinho">
+    <img src="https://cdn-icons-png.flaticon.com/512/8567/8567799.png" alt="Carrinho" class="carrinho-icon">
+  </a>
+</li>
+    </div>
+</header>
+
+  <footer>
+  <div class="container">
+    
+    <div style="text-align: center; color: #999; margin-bottom: 1.5rem;">
+      <p><strong>FitStore Suplementos,Equipamentos e Moda Fitness</strong></p>
+      <p>CNPJ: 12.345.678/0001-99 | Rua Exemplo, 123 - Blumenau, SC</p>
+      <p>E-mail: lucasmiepsen@gmail.com | Telefone: (47) 99211-8232</p>
+    </div>
+
+    <div style="text-align: center; font-size: 0.85rem; color: #bbb;">
+      <p>Desenvolvido por Lucas Moreira Iepsen - Curso Entra-21 2025</p>
+      <p>&copy; 2025 FitStore - Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Impulsione seus treinos com os melhores produtos</h1>
+      <p>Suplementos de qualidade, roupas esportivas confortáveis e equipamentos de academia premium em um só lugar.</p>
+      <a href="#suplementos" class="btn">Ver ofertas</a>
+    </div>
+  </section>
+
+  <!-- ======= SUPLEMENTOS ======= -->
+   <section id="suplementos">
+    <div class="container">
+      <h2>Suplementos</h2>
+      <p class="sec-desc">Proteína, Creatina e Pre-treino. Selecionados para performance máxima.</p>
+      <div class="grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="https://www.gsuplementos.com.br/upload/produto/imagem/top-whey-protein-concentrado-1kg-growth-supplements-10.webp" alt="Whey Protein" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Whey Protein Growth</h3>
+            <p class="card-desc">Alta pureza e absorção rápida para recuperação muscular.</p>
+            <span class="price">R$ 119,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Whey Protein Growth', 119.90)">Adicionar ao Carrinho</button>
+            <a href="Whey-Growth.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="https://www.gsuplementos.com.br/upload/produto/layout/72/produto1-mono-250-v2.webp" alt="Creatina" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Creatina Growth</h3>
+            <p class="card-desc">Explosão de força e energia em cada série.</p>
+            <span class="price">R$ 89,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Creatina Growth', 89.90)">Adicionar ao Carrinho</button>
+            <a href="Creatina-Growth.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="https://www.gsuplementos.com.br/upload/produto/imagem/pr-treino-haze-hardcore-300g-growth-supplements-6.jpg" alt="Pré‑treino" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Pré‑Treino Growth</h3>
+            <p class="card-desc">Foco, energia e vasodilatação sem crash.</p>
+            <span class="price">R$ 119,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Pré‑Treino Growth', 119.90)">Adicionar ao Carrinho</button>
+            <a href="Pré-Treino-Growth.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SUPLEMENTOS 2======= -->
+  <section id="suplementos" style="background:#f3f3f3;">
+    <div class="container">
+      <h2>Suplementos</h2>
+      <p class="sec-desc">Vitaminas, Ômega 3 e Arginina. Selecionados para performance máxima.</p>
+      <div class="grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="https://nutrye.com.br/wp-content/uploads/2022/11/vitamina-b12-caps.jpg" alt="Vitamina" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Vitamina</h3>
+            <p class="card-desc">Vitamina B12 é uma das vitaminas mais importantes para o bom funcionamento do organismo, e também uma das mais complexas.</p>
+            <span class="price">R$ 39,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Vitamina B12', 39.90)">Adicionar ao Carrinho</button>
+            <a href="Vitamina-B12.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="https://cdn.awsli.com.br/600x700/2585/2585312/produto/303445357/omega-3-pop---cn---60caps-site-5v7h0or1ix.png" alt="Ômega 3" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Ômega 3</h3>
+            <p class="card-desc">O ômega 3 é um tipo de gordura poli-insaturada essencial para o bom funcionamento do organismo</p>
+            <span class="price">R$ 45,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Ômega 3', 45.90)">Adicionar ao Carrinho</button>
+            <a href="Ômega-3.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="https://www.corpoevidasuplementos.com.br/images/products/full/13651-l-arginina-150g-physical-pharma.1737332983.jpg" alt="L-Arginina" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">L-Arginina</h3>
+            <p class="card-desc">A vasodilatação promovida pela arginina aumenta o aporte de nutrientes e oxigênio para os músculos.</p>
+            <span class="price">R$ 50,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('L-Arginina', 50.90)">Adicionar ao Carrinho</button>
+            <a href="L-Arginina.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= EQUIPAMENTOS ======= -->
+  <section id="equipamentos">
+    <div class="container">
+      <h2>Equipamentos de Academia</h2>
+      <p class="sec-desc">Monte seu treino com acessórios profissionais.</p>
+      <div class="grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/61p144u4YZL._UF1000,1000_QL80_.jpg" alt="Halteres Ajustáveis" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Halteres Ajustáveis 55kg</h3>
+            <p class="card-desc">Versatilidade de peso sem ocupar espaço.</p>
+            <span class="price">R$ 240,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Halteres Ajustáveis', 240.90)">Adicionar ao Carrinho</button>
+            <a href="Halteres-Ajustáveis.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="https://ropestore.com.br/cdn/shop/files/kit-super-band-rope-store.webp?v=1739821312" alt="Faixas Elásticas" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Kit super band Rope</h3>
+            <p class="card-desc">Níveis de resistência para treino funcional.</p>
+            <span class="price">R$ 129,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Kit super band Rope', 129.90)">Adicionar ao Carrinho</button>
+            <a href="Faixas-Elásticas.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71GuW0CxDwL._AC_UL232_SR232,232_.jpg" alt="Corda de Pular Speed" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Corda de Pular Speed</h3>
+            <p class="card-desc">Agilidade e cardio de alta intensidade.</p>
+            <span class="price">R$ 59,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Corda de Pular Speed', 59.90)">Adicionar ao Carrinho</button>
+            <a href="Corda-de-Pular.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ======= EQUIPAMENTOS 2 ======= -->
+  <section id="equipamentos" style="background:#f3f3f3;">
+    <div class="container">
+      <h2>Equipamentos de Academia</h2>
+      <p class="sec-desc">Monte seu treino com acessórios profissionais.</p>
+      <div class="grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="https://cdn.awsli.com.br/600x1000/2516/2516745/produto/320469788/6269857c826decd13287c9892167f70f-rr7xr912x4.jpg" alt="Strap" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Strap</h3>
+            <p class="card-desc">O Strap de Musculação é ideal para impulsionar e garantir segurança durante os seus treinos.</p>
+            <span class="price">R$ 26,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Starp', 26.90)">Adicionar ao Carrinho</button>
+            <a href="Strap.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="https://images.tcdn.com.br/img/img_prod/550428/luva_de_musculacao_neoprene_com_munhequeira_poker_252_1_20190905115024.jpg" alt="Luvas" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Luvas</h3>
+            <p class="card-desc">Versáteis e servem para praticar musculação, spinning, halterofilismo, bike e crossfit.</p>
+            <span class="price">R$ 28,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Luvas', 28.90)">Adicionar ao Carrinho</button>
+            <a href="Luvas.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="https://cdn.awsli.com.br/600x450/1275/1275308/produto/138407487/f67fcbc8f7.jpg" alt="Garrafa" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Garrafa</h3>
+            <p class="card-desc">Com capacidade de 700 ml, ela mantém sua água gelada por até 10 horas.</p>
+            <span class="price">R$ 39,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Garrafa', 39.90)">Adicionar ao Carrinho</button>
+            <a href="Garrafa.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ======= ROUPAS ======= -->
+  <section id="roupas">
+    <div class="container">
+      <h2>Roupas Esportivas</h2>
+      <p class="sec-desc">Conforto, estilo e tecnologia dry fit para acompanhar cada movimento.</p>
+      <div class="grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_801790-CBT74903366534_032024-O-conjunto-de-roupas-esportivas-masculinas-para-corrida-5xl.webp" alt="Kit Sport Fit" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Kit Sport Fit</h3>
+            <p class="card-desc">Tecido respirável e corte slim para performance.</p>
+            <span class="price">R$ 109,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Kit Sport Fit', 109.90)">Adicionar ao Carrinho</button>
+            <a href="Kit-Sport-Fit.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="https://a-static.mlcdn.com.br/1500x1500/camisa-de-compressao-masculina-respiravel-secagem-rapida-para-fitness-e-futebol-estampa-de-anime/aliexpress/201316985/81ab94adc58633fd76c56c81385610eb.jpeg" alt="Camiseta de Compressão" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Camiseta de Compressão</h3>
+            <p class="card-desc">Suporte muscular e liberdade de movimentos.</p>
+            <span class="price">R$ 79,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Camiseta de Compressão', 79.90)">Adicionar ao Carrinho</button>
+            <a href="Camiseta-de-Compressão.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="https://static.zattini.com.br/produtos/kit-3-shorts-bermudas-masculinas-futebol-sport-esporte-fitness/02/QSB-0070-002/QSB-0070-002_zoom1.jpg?ts=1602790118" alt="Shorts Masculino" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Shorts Masculino</h3>
+            <p class="card-desc">Leveza e elasticidade para treinos intensos.</p>
+            <span class="price">R$ 89,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Shorts Masculino', 89.90)">Adicionar ao Carrinho</button>
+            <a href="Shorts-Masculino.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ======= ROUPAS 2 ======= -->
+  <section id="roupas" style="background:#f3f3f3;">
+    <div class="container">
+      <h2>Roupas Esportivas</h2>
+      <p class="sec-desc">Conforto, estilo e tecnologia dry fit para acompanhar cada movimento.</p>
+      <div class="grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/51ryWSlCb8L._AC_SX466_.jpg" alt="Camisa Térmica Masculina" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Camisa Térmica Masculina</h3>
+            <p class="card-desc">Tecido respirável e otimo para uma boa performance.</p>
+            <span class="price">R$ 82,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Camisa Térmica Masculina', 82.90)">Adicionar ao Carrinho</button>
+            <a href="Camisa-Térmica-Masculina.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="https://http2.mlstatic.com/D_911905-MLB85614773542_062025-O.jpg" alt="Calça esportiva" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Calça esportiva</h3>
+            <p class="card-desc">Leve e com boa liberdade de movimentos.</p>
+            <span class="price">R$ 75,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Calça esportiva', 75.90)">Adicionar ao Carrinho</button>
+            <a href="Calça-esportiva.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/51nvr5bY8VL._AC_SY606_.jpg" alt="Moletom Masculino" width="400px">
+          <div class="card-body">
+            <h3 class="card-title">Moletom Masculino</h3>
+            <p class="card-desc">Moletom Liso, uma boa roupa para treinar em climas frios.</p>
+            <span class="price">R$ 79,90</span>
+            <button class="btn" onclick="adicionarAoCarrinho('Moletom Masculino', 79.90)">Adicionar ao Carrinho</button>
+            <a href="Moletom-Masculino.html" class="Produto">Ver Produto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= DESCONTO ======= -->
+  <section class="container cta" id="contato">
+    <h3>Ganhe 10% de desconto na primeira compra!</h3>
+    <p>Insira seu e-mail e receba cupons exclusivos:</p>
+    <form onsubmit="event.preventDefault();alert('Obrigado! Seu cupom chegará em breve.');">
+      <input type="email" placeholder="Seu e-mail" required />
+      <button class="btn" type="submit">Quero meu desconto</button>
+    </form>
+  </section>
+
+<section id="contato" class="container" style="padding: 4rem 0;">
+  <h2>Fale Conosco</h2>
+  <p class="sec-desc">Dúvidas, sugestões ou parcerias? Envie uma mensagem para nossa equipe:</p>
+  <form style="display: flex; flex-direction: column; gap: 1rem; max-width: 500px; margin: auto;">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu e-mail" required>
+    <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+    <button class="btn" type="submit">Enviar mensagem</button>
+  </form>
+</section>
+
+<!-- ======= POLÍTICA DE PRIVACIDADE ======= -->
+<section id="politica" class="container" style="padding: 4rem 0;">
+  <h2>Política de Privacidade</h2>
+  <p class="sec-desc">Saiba como protegemos seus dados ao utilizar nosso site:</p>
+  <p>Na FitStore, valorizamos a sua privacidade. Coletamos apenas as informações necessárias para processar pedidos e melhorar sua experiência. Seus dados nunca serão vendidos ou compartilhados com terceiros sem sua autorização. Utilizamos tecnologias seguras para garantir a proteção de suas informações. Ao continuar navegando, você concorda com nossa política de uso de dados.</p>
+</section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#suplementos">Suplementos</a>
+        <a href="#roupas">Roupas</a>
+        <a href="#equipamentos">Equipamentos</a>
+      </div>
+      <p>&copy; 2025 FitStore - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

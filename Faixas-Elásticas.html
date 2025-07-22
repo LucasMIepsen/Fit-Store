@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit Faixas Elásticas - FitStore</title>
+  <style>
+
+ * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #ff6600;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .logo a {
+      color: #fff;
+      text-decoration: none;
+    }
+    nav a {
+      margin-left: 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .card {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .produto-img {
+      flex: 1 1 300px;
+    }
+    .produto-img img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .produto-info {
+      flex: 1 1 400px;
+    }
+    .produto-info h1 {
+      margin-bottom: 1rem;
+      color: #222;
+    }
+    .produto-info p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    .preco {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ff6600;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      padding: 0.8rem 2rem;
+      background: #ff6600;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #e25600;
+    }
+    .voltar {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .voltar a {
+      color: #ff6600;
+      text-decoration: none;
+    }
+    .voltar a:hover {
+      text-decoration: underline;
+    }
+
+    .descricao-produto {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #f9f9f9;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.descricao-produto h4 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.descricao-produto p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsividade */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .card {
+        flex-direction: column;
+        padding: 1.5rem;
+      }
+
+      .produto-img,
+      .produto-info {
+        flex: 1 1 100%;
+      }
+
+      .descricao-produto {
+        padding: 1rem;
+        margin: 1.5rem 1rem;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+      }
+
+      nav h3 {
+        font-size: 1rem;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+  </style>
+
+  <script>
+  function adicionarAoCarrinhoDetalhado() {
+    const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+    carrinho.push({
+      nome: "Kit super band Rope",
+      preco: 129.90
+    });
+
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    alert("Produto adicionado ao carrinho!");
+    window.location.href = "carrinho.html";
+  }
+</script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="WebSite.html">FitStore</a>
+    </div>
+    <nav>
+      <h3>Compras de Qualidade</h3>
+    </nav>
+  </header>
+
+  <!-- Card 2 -->
+        <div class="card">
+          <img src="https://ropestore.com.br/cdn/shop/files/kit-super-band-rope-store.webp?v=1739821312" alt="Faixas Elásticas" width="200px">
+          <div class="card-body">
+            <h3 class="card-title">Kit super band Rope</h3>
+            <p class="card-desc">Níveis de resistência para treino funcional.</p>
+            <span class="price">R$ 129,90</span>
+            <button class="btn" onclick="adicionarAoCarrinhoDetalhado()">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+
+        <div class="descricao-produto">
+  <h4>Descrição detalhada</h4>
+  <p>
+      O kit super band Rope é muito eficiente e ajuda você a ter um 
+      alto nível de condicionamento físico, porque você tem a possibilidade 
+      de fazer diversos treinos. Listamos alguns desses benefícios para você.
+  </p>
+</div>
+
+  <div class="voltar">
+    <a href="WebSite.html">← Voltar para a loja</a>
+  </div>
+</body>
+</html>
